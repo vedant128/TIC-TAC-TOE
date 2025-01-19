@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#container{
+    height: 60vmin;
+    width: 70vmin;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    
+}
+#k{
+    font-size: 45px;
+    height: 18vh;
+    width: 18vh;
+    border-radius: 20px;
+    border-color: rgb(129, 224, 12);
+    color: rgb(239, 4, 4);;
+    background: none;
+}
+#k:hover{
+    box-shadow: 0 0 30px rgb(255, 5, 5);
+}
+#btn,#nbtn{
+    margin: 30px;
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    background: none;
+    font-family:cursive;
+    color: rgb(129, 224, 12);
+    border: 2px solid rgb(129, 224, 12);
+    border-radius: 10px;
+}
+#btn:hover,#nbtn:hover{
+    font-family:cursive;
+    background: rgb(129, 224, 12);
+    color: rgb(255, 0, 0);
+    border: 2px solid rgb(150, 150, 150);
+    box-shadow: 0 0 30px rgb(255, 5, 5);
+}
+#nbtn{
+    margin: 2px;
+
+}
+#msg{
+    color: aliceblue;
+    font-size: 40px;
+    margin: 4px;
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.hide{
+    display: none;
+}
+
+.hide1 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2000ms ease, visibility 0s 300ms;
+}
+
+.hide1.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2000ms ease, visibility 0s 0s;
+}
+.color-white {
+    color: white;
+    background-color:white ;
+}
+
+/* Small screens: Mobile devices */
+@media screen and (max-width: 600px) {
+    #container {
+        width: 90vw;
+        height: auto;
+        gap: 3vmin;
+    }
+
+    #k {
+        font-size: 35px;
+        height: 14vh;
+        width: 14vh;
+    }
+
+    #btn, #nbtn {
+        margin: 15px;
+        width: 80px;
+        height: 30px;
+        font-size: small;
+    }
+
+    #msg {
+        font-size: 24px;
+    }
+}
+
+/* Extra small screens: Very small mobile devices */
+@media screen and (max-width: 400px) {
+    #container {
+        width: 95vw;
+        gap: 4vmin;
+    }
+
+    #k {
+        font-size: 30px;
+        height: 12vh;
+        width: 12vh;
+    }
+
+    #btn, #nbtn {
+        margin: 10px;
+        width: 70px;
+        height: 25px;
+        font-size: small;
+    }
+
+    #msg {
+        font-size: 20px;
+    }
+}
